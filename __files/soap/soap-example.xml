@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope/" soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+  <soap:Body>
+    <m:SayHelloResponse xmlns:m="https://www.mycompany.com/sayhello">
+      <m:Message>Hello Bob</m:Message>
+    </m:SayHelloResponse>
+  </soap:Body>
+</soap:Envelope>

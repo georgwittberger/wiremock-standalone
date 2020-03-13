@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/rest/example",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$[?(@.name == 'Bob')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "message": "Hello Bob"
+    }
+  }
+}

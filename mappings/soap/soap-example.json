@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/soap/example",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/soap+xml"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesXPath": "/soap:Envelope/soap:Body/m:SayHello/m:Name[text() = 'Bob']",
+        "xPathNamespaces": {
+          "soap": "http://www.w3.org/2003/05/soap-envelope/",
+          "m": "https://www.mycompany.com/sayhello"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/soap+xml"
+    },
+    "bodyFileName": "soap/soap-example.xml"
+  }
+}
