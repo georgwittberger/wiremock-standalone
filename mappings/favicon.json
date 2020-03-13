@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/favicon.ico"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "image/x-icon"
+    },
+    "bodyFileName": "favicon.ico"
+  }
+}
